@@ -1,26 +1,35 @@
+// src/App.tsx
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Resume from './pages/Resume';
+import Contact from './pages/Contact';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        {/* Add navigation */}
+        <nav className="bg-gray-800 p-4">
+          <ul className="flex space-x-4 text-white">
+            <li><a href="/" className="hover:text-gray-400">Home</a></li>
+            <li><a href="/about" className="hover:text-gray-400">About</a></li>
+            <li><a href="/resume" className="hover:text-gray-400">Resume</a></li>
+            <li><a href="/contact" className="hover:text-gray-400">Contact</a></li>
+          </ul>
+        </nav>
+
+        {/* Define Routes */}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
