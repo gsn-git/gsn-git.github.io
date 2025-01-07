@@ -1,23 +1,26 @@
 import React from 'react';
-import userImage from '../assets/gsn.jpg';
+import myImage from '../assets/gsn-03.jpg'; // Adjust the path as necessary
 
 function About() {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
       <h2 className="text-3xl font-bold text-center">About Me</h2>
       <div className="flex flex-col items-center mt-4">
-        <img src={userImage} alt="User" className="w-32 h-32 rounded-full mt-4" />
+        <img src={myImage} alt="User" className="w-48 h-48  rounded-full mt-4" />
         <div className="mt-4 max-w-2xl">
           <p className="text-lg mt-4 bullet-icon">
-            Experienced and versatile Full Stack Technology Architect with overall 20+ years of experience in IT industry including last 9 years of experiene in front end technologies. Proven track record of leading and delivering multiple medium to large scale projects from inception through to successful production deployments.
+            I believe in consistent learning rather than starving for knowledge. My approach to growth combines continual learning with my day-to-day work, always seeking to improve and stay updated in both my personal and professional life.
           </p>
           <p className="text-lg mt-4 bullet-icon">
-            Skilled in boh individual contribution and team management with extensive experience in project and resource planning, as well as overseing client deliverables. Possesses compressive expertise across all phases of the software development life cycle, including requirements analysis, design, development, testing, and implementation.
+            Outside of my work, I have a strong interest in world affairs, space exploration, and the latest in movies and TV. Planning and staying organized are also key aspects of my approach to both work and personal life.
           </p>
           <p className="text-lg mt-4 bullet-icon">
-            Front-end developer with a passion for creating beautiful, interactive websites. Specializes in React, TypeScript, and modern CSS frameworks like Tailwind.
+            Though I'm present on social media platforms, I tend to remain more of a passive participant rather than highly active.
           </p>
-        </div>
+          <p className="text-lg mt-4 bullet-icon">
+            Technologically, I love keeping up with the latest trends, new inventions, and tech-related updates, especially those related to my mobile, and the technologies I'm currently working with. I enjoy diving into the details, understanding how things work, and staying at the cutting edge of tech innovation.
+          </p>
+        </div>       
       </div>
     </div>
   );

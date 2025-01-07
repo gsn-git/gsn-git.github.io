@@ -35,6 +35,14 @@ const Resume: React.FC = () => {
           </ul>
         </div>
         <div className="mb-6">
+          <h3 className="text-xl font-semibold border-b pb-2">Tech Stack</h3>
+          <ul className="list-disc ml-6 mt-4">
+            <li>FED - React, JavaScript, TypeScript, Remix, REST API, JQuery, ES6 </li>
+            <li>Server - Node, Express</li>
+            <li>Others - HTML, CSS 3, Tailwind, Bootstrap, Responsive UI, Accessibility, Web Applications - Performance, Security, Authentication & Authorization, OIDC, OTEL, Azure ADB2C</li>
+          </ul>
+        </div>
+        <div className="mb-6">
           <h3 className="text-xl font-semibold border-b pb-2">Relevent Experience</h3>
           <ul className="list-disc ml-6 mt-4">
             <li className='mb-6'>As a Technology Architect and Subject Matter Expert (SME) in front-end development, specializing in React and Remix, I have been instrumental in supporting a major telecom company. My role involves managing multiple lines of business, ensuring seamless delivery of solutions, and providing accurate estimates for new features. This includes designing scalable, efficient, and user-centric front-end architectures, collaborating with cross-functional teams, and ensuring alignment with overall business goals.</li>
