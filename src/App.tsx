@@ -1,6 +1,6 @@
 // src/App.tsx
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Resume from './pages/Resume';
@@ -13,10 +13,10 @@ const App: React.FC = () => {
         {/* Add navigation */}
         <nav className="bg-gray-800 p-4">
           <ul className="flex space-x-4 text-white">
-            <li><a href="/" className="hover:text-gray-400">Home</a></li>
-            <li><a href="/about" className="hover:text-gray-400">About</a></li>
-            <li><a href="/resume" className="hover:text-gray-400">Resume</a></li>
-            <li><a href="/contact" className="hover:text-gray-400">Contact</a></li>
+            <li><Link to="/" className="hover:text-gray-400">Home</Link></li>
+            <li><Link to="/about" className="hover:text-gray-400">About</Link></li>
+            <li><Link to="/resume" className="hover:text-gray-400">Resume</Link></li>
+            <li><Link to="/contact" className="hover:text-gray-400">Contact</Link></li>
           </ul>
         </nav>
 
